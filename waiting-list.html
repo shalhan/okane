@@ -1,0 +1,203 @@
+<!--
+
+=========================================================
+* Swipe - Mobile App One Page Bootstrap 5 Template
+=========================================================
+
+* Product Page: https://themesberg.com/product/bootstrap/swipe-free-mobile-app-one-page-bootstrap-5-template
+* Copyright 2020 Themesberg (https://www.themesberg.com)
+
+* Coded by https://themesberg.com
+
+=========================================================
+
+* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. Contact us if you want to remove it.
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- Primary Meta Tags -->
+<title>Okane | Keep Calm and Become Rich with Us</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="title" content="Swipe - Mobile App One Page Bootstrap 5 Template">
+<meta name="author" content="Themesberg">
+<meta name="description" content="Free Mobile Application One Page Bootstrap 5 Template by Themesberg">
+<meta name="keywords" content="bootstrap, bootstrap 5, bootstrap 5 one page, bootstrap 5 mobile application, one page template, bootstrap 5 one page template, themesberg, themesberg one page, one page template bootstrap 5" />
+<link rel="canonical" href="https://themesberg.com/product/bootstrap/swipe-free-mobile-app-one-page-bootstrap-5-template">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://demo.themesberg.com/swipe/">
+<meta property="og:title" content="Swipe - Mobile App One Page Bootstrap 5 Template">
+<meta property="og:description" content="Free Mobile Application One Page Bootstrap 5 Template by Themesberg">
+<meta property="og:image" content="https://themesberg.s3.us-east-2.amazonaws.com/public/products/swipe/swipe-thumbnail.jpg">
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://demo.themesberg.com/swipe/">
+<meta property="twitter:title" content="Swipe - Mobile App One Page Bootstrap 5 Template">
+<meta property="twitter:description" content="Free Mobile Application One Page Bootstrap 5 Template by Themesberg">
+<meta property="twitter:image" content="https://themesberg.s3.us-east-2.amazonaws.com/public/products/swipe/swipe-thumbnail.jpg">
+
+<!-- Favicon -->
+<!-- <link rel="apple-touch-icon" sizes="120x120" href="./assets/img/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="./assets/img/favicon/favicon-16x16.png">
+<link rel="manifest" href="./assets/img/favicon/site.webmanifest">
+<link rel="mask-icon" href="./assets/img/favicon/safari-pinned-tab.svg" color="#ffffff">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="theme-color" content="#ffffff"> -->
+
+<!-- Fontawesome -->
+<link type="text/css" href="./vendor/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+
+<!-- Swipe CSS -->
+<link type="text/css" href="./css/swipe.css" rel="stylesheet">
+
+<!-- NOTICE: You can use the _analytics.html partial to include production code specific code & trackers -->
+<style>
+    .alert.hidden {
+        display: none;
+    }
+</style>
+</head>
+
+<body>
+    <main>
+        <!-- Section -->
+        <section class="min-vh-100 d-flex align-items-center bg-soft">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12">
+                        <div class="signin-inner mt-3 mt-lg-0 bg-white shadow border rounded border-light w-100">
+                            <div class="row gx-0 align-items-center justify-content-between">
+                                <div class="col-12 col-lg-5 d-none d-lg-block rounded-left bg-secondary">
+                                    <img src="./assets/img/illustrations/login.svg" alt="login image">
+                                </div>
+                                <div class="col-12 col-lg-7 px-3 py-5 px-sm-5 px-md-6">
+                                    <div class="mb-4 mt-md-0">
+                                        <h1 class="mb-4 h3">Pengerjaan OkaneApp Sedang Dalam Proses...</h1>
+                                        <p class="text-muted">
+                                            Kami berkomitmen memberikan aplikasi dengan kualitas terbaik.
+                                            Daftarkan segera email kamu agar bisa kami infokan apabila aplikasinya sudah siap untuk digunakan
+                                        </p>
+                                    </div>
+                                    <div id="alert" class="alert hidden">
+                                    </div>
+                                    <form onsubmit="joinWaitingList(event)" method="POST" class="mt-4">
+                                        <!-- Form -->
+                                        <div class="form-group mb-4">
+                                            <label for="exampleInputEmailCard1">Nama</label>
+                                            <div class="input-group">
+                                                <input type="text" class="form-control" id="name">
+                                            </div>  
+                                        </div>
+                                        <div class="form-group mb-4">
+                                            <label for="exampleInputEmailCard1">Email</label>
+                                            <div class="input-group">
+                                                <input type="email" class="form-control" id="email">
+                                            </div>  
+                                        </div>
+                                        <button id="submitButton" type="submit" class="btn btn-block btn-primary">Ya, Beritahu Saya Jika Sudah Siap</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Core -->
+<script src="./vendor/popper.js/dist/umd/popper.min.js"></script>
+<script src="./vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="./vendor/headroom.js/dist/headroom.min.js"></script>
+
+<!-- Vendor JS -->
+<script src="./vendor/onscreen/dist/on-screen.umd.min.js"></script>
+<script src="./vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+
+<!-- Swipe JS -->
+<script src="./assets/js/swipe.js"></script>
+
+<script>
+    function joinWaitingList(e) {
+        e.preventDefault();
+        let button = document.getElementById('submitButton')
+        let name = document.getElementById('name')
+        let email = document.getElementById('email')
+        disableAll(name, email, button)
+        if (name.value == '' || email.value == '') {
+            showError('Silahkan lengkapi nama dan email kamu.')
+            enableAll(name, email, button)
+            return;
+        }
+        let url = 'https://api.sheety.co/de0d8ffef2f6f853b375014320b14ee2/investmentJournal/waitingList';
+        let body = {
+           waiting_list: {
+                name: name.value,
+                email: email.value
+            }
+        }
+        fetch(url, {
+            method: 'POST',
+            body: JSON.stringify(body),
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        })
+        .then((response) => response.json())
+        .then(json => {
+            showSuccess('Terima kasih telah mendaftarkan email kamu.')
+            enableAll(name, email, button)
+        })
+        .catch((err) => {
+            showError('Terjadi kesalahan koneksi. Coba beberapa saat lagi.')
+            enableAll(name, email, button)
+        })
+    }
+
+    function disableAll(name, email, button) {
+        name.setAttribute('disabled', true)
+        email.setAttribute('disabled', true)
+        button.setAttribute('disabled', true)
+    }
+
+    function enableAll(name, email, button, isReset = true) {
+        name.disabled = false
+        email.disabled = false
+        button.disabled = false
+        if (isReset) resetForm(name, email)
+    }
+
+    function resetForm(name, email) {
+        name.value= ''
+        email.value= ''
+    }
+
+    function showError(message) {
+        let alert = document.getElementById('alert')
+        alert.textContent = message;
+        alert.classList.remove('hidden')
+        alert.classList.remove('alert-success')
+        alert.classList.add('alert-danger')
+    }
+
+    function showSuccess(message) {
+        let alert = document.getElementById('alert')
+        alert.textContent = message;
+        alert.classList.remove('hidden')
+        alert.classList.remove('alert-danger')
+        alert.classList.add('alert-success')
+    }
+</script>
+
+</body>
+
+</html>
